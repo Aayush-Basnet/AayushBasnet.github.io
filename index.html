@@ -10,12 +10,6 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 
 	<style>
-	
-		body {
-			color: black;
-			
-		}
-
 		h2 {
 			font-weight: bold;
 			color: goldenrod;
@@ -26,6 +20,47 @@
 			font-weight: bold;
 			color: gray;
 		}
+		.image.fit img {
+    max-width: 100%;
+    height: auto;
+}
+.avatar img {
+    width: 180px;  
+    height: 180px;
+    border-radius: 50%; /* Ensures perfect circular shape */
+    object-fit: cover; /* Maintains aspect ratio */
+    border: 5px solid white; /* Adjusted for better contrast */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow effect */
+}
+
+#header {
+    background: linear-gradient(to right, #8ba3cf, #2a5298); /* Sleek blue gradient */
+    text-align: center;
+    padding: 40px 0;
+}
+#header h1 {
+    font-size: 24px;
+    color: #fff; /* White for better contrast */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#header h4 {
+    font-size: 16px;
+    color: #ddd; /* Light grey to complement white */
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+.download-btn {
+    background-color: #f4b400; /* Google-style Yellow */
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
 	</style>
 </head>
 
@@ -47,17 +82,16 @@
 			}
 		</style>
 
-		<header id="header">
-			<div class="inner">
-				<a href="images/profile.jpg" class="image avatar"><img src="images/profile.jpg" style="height:200px;width: 200px;  border: 8px solid #fefdf9;" 
-						alt="Aayush-Basnet" /></a>
-				<h1><strong>Aayush Basnet</strong></h2>
-					<h4>
-						<p>Data enthusiast with a passion for decoding patterns and turning data into actionable
-							insights.</p>
-					</h4>
-			</div>
-		</header>
+<header id="header">
+    <div class="inner">
+        <a href="images/profile.jpg" class="image avatar">
+            <img src="images/profile_pic.JPG" alt="Aayush-Basnet" />
+        </a>
+        <h1><strong>Aayush Basnet</strong></h1>
+        <h4>Data enthusiast with a passion for decoding patterns and turning data into actionable insights.</h4>
+    </div>
+</header>
+
 
 
 		<!-- About Me -->
@@ -75,9 +109,9 @@
 				<p>Now, I leverage this passion to transform complex data into actionable insights. As a data analyst, I
 					delve into the world of information, uncovering patterns and trends that drive informed
 					decision-making.</p>
-				<div class="row">
+				<div class="btn">
 						<div class="button padd-20">
-							<a href="ResumeforDataAnalyst.pdf" class="btn" download>Download CV</a>
+							<a href="ApplicationforDataAnalyst.pdf" class="btn" download>Download CV</a>
 
 						</div>
 
@@ -91,55 +125,41 @@
 				<div class="row">
 
 					<article class="col-6 col-12-xsmall work-item">
-						<a class="image fit"><img src="images/nash.jpg" alt="" /></a>
+						<a class="image fit"><img src="images/Target_pic.jpg" alt="" /></a>
 						<h2><a
-								href="https://github.com/Aayush-Basnet/Project-Portfolio/blob/main/Nashville%20Housing%20Data%20Cleaning.sql">Housing
-								Data Cleaning & Analysis using SQL</a></h2>
-						<p>In this project I take raw housing data and transform it in <b>SQL</b> Server to make it more
-							usable and understandable for analysis<br />
-							It reveals property value trends, identifies investment opportunities in growing
-							neighborhoods, and assesses the impact of external factors on the real estate market.
+								href="https://github.com/Aayush-Basnet/SQL-Python-Ecommerce-project">Target Sales Analysis (SQL + Python)
+							</a></h2>
+						<p>I worked on an extensive project involving a large e-commerce database with nearly <b>100,000</b> records. 
+							The process included utilizing SQL for querying and Python with NumPy, Matplotlib, and Seaborn for 
+							data manipulation and visualization
 						</p>
 						<ul class="actions special">
-							<li><a href="https://github.com/Aayush-Basnet/Project-Portfolio/blob/main/Nashville%20Housing%20Data%20Cleaning.sql"
+							<li><a href="https://github.com/Aayush-Basnet/SQL-Python-Ecommerce-project"
+									class="button">View Project</a></li>
+						
+						</ul>
+					</article>
+
+					
+					<article class="col-6 col-12-xsmall work-item">
+						<a class="image fit"><img src="images/BlinkIt_profile.jpeg"  alt="" /></a>
+						<h2><a
+								href="https://github.com/Aayush-Basnet/BlinkIt-Grocery-Sales">BlinkIt Grocery Sales (SQL + Excel)
+							</a></h2>
+						<p>This project focused on addressing key business challenges for Blinkit, including revenue optimization, customer retention, and operational efficiency.
+							Using Excel, I designed a dynamic and interactive dashboard providing a deep dive into Blinkit's Grocery sales data.
+						</p>
+						<ul class="actions special">
+							<li><a href="https://github.com/Aayush-Basnet/BlinkIt-Grocery-Sales"
 									class="button">View Project</a></li>
 						</ul>
 					</article>
 
-					<article class="col-6 col-12-xsmall work-item">
-						<a class="image fit"><img src="images/airways.png" alt="" /></a>
-						<h2><a
-								href="https://public.tableau.com/app/profile/aayush.chhettri/viz/BritishAirwaysReviews_17128910984360/Dashboard1">British
-								Airways Review</a></h2>
-						<p>I analyzed British Airways reviews with <b>Tableau</b>, uncovering passenger sentiment trends
-							by month and location. I even drilled down to aircraft-specific insights to help
-							optimize their fleet. Interactive dashboards with dynamic filters empower users to find what
-							matters most to them, driving data-driven decisions
-						</p>
-						<ul class="actions special">
-							<li><a href="https://public.tableau.com/app/profile/aayush.chhettri/viz/BritishAirwaysReviews_17128910984360/Dashboard1"
-									class="button">View Dashboard</a> </li>
-						</ul>
-					</article>
-
-
-					<article class="col-6 col-12-xsmall work-item">
-						<a class="image fit"><img src="images/pandas.png" alt="" /></a>
-						<h2><a href="https://github.com/Aayush-Basnet/Data-Analysis-Project">Data Analysis project using
-								Python's libraries</a></h2>
-						<p>In this project, I've included 10+ data analysis project show-casing my skills and experience
-							in data analytics using Python's library.
-						</p>
-						<ul class="actions special">
-							<li><a href="https://github.com/Aayush-Basnet/Data-Analysis-Project" class="button">View
-									Project</a> </li>
-						</ul>
-					</article>
 
 					<article class="col-6 col-12-xsmall work-item">
 						<a class="image fit"><img src="images/Customer Segmentation.png" alt="" /></a>
 						<h2><a
-								href="hhttps://github.com/Aayush-Basnet/Power-BI/blob/main/Power%20BI%20Project/CustomerPerformance.pbix">Customer Performance Analysis</a></h2>
+								href="https://github.com/Aayush-Basnet/Power-BI/blob/main/Power%20BI%20Project/CustomerPerformance.pbix">Customer Performance Analysis</a></h2>
 						<p> Crafting dashboards and analyzing data, this project has increased my experience of <b>Power BI</b> and made of more capable of handling different type of data in different ways. </p>
 						<ul class="actions special">
 							<li><a href="https://github.com/Aayush-Basnet/Power-BI/blob/main/Power%20BI%20Project/CustomerPerformance.pbix"
@@ -153,7 +173,7 @@
 						<h2><a
 								href="https://github.com/Aayush-Basnet/Black-Friday-Sales-Prediction">Black Friday Sales Prediction</a>
 						</h2>
-						<p>This project about Black-Friday-Sales-Prediction includes Data Exploration & Cleaning, Visualization, Data Preprocessing, and Model Building which includes Linear Regression, Ridge Regression, Decision Tree Regressor, Random Forest Regressor, Extra Trees Regressor and XGBRegressor</p>
+						<p>This project includes Data Exploration & Cleaning, Visualization, Data Preprocessing, and Model Building which includes Linear Regression, Ridge Regression, Decision Tree Regressor, Random Forest Regressor, Extra Trees Regressor and XGBRegressor</p>
 						<ul class="actions special">
 							<li><a href="https://github.com/Aayush-Basnet/Black-Friday-Sales-Prediction"
 									class="button">View Dashboard</a></li>
@@ -161,12 +181,11 @@
 					</article>
 
 					<article class="col-6 col-12-xsmall work-item">
-						<a class="image fit"><img src="images/adidas.png" alt=" " /></a>
+						<a class="image fit"><img src="images/adidas_png.png" height="220" width="140" alt=" " /></a>
 						<h2><a
-								href="https://github.com/Aayush-Basnet/adidas">Adidas Sales Analysis using SQL and Power BI</a>
+								href="https://github.com/Aayush-Basnet/adidas">Adidas Sales Analysis (SQL+ Power BI)</a>
 						</h2>
-						<p>This analysis utilizes the "Adidas Sales Dataset" from Kaggle, which includes data on retailers, dates, region, product, total sales, unit sold, operating profit, sales method etc. <br>
-							In summary, Adidias' success story involves strategic sales methods, product popularity, and regional variations. Whether you're a marketing professional or a fan of the brand, understanding these insights can be fascinating!
+						<p> Adidias' success story involves strategic sales methods, product popularity, and regional variations. Whether you're a marketing professional or a fan of the brand, understanding these insights can be fascinating!
 						</p>
 						<ul class="actions special">
 							<li><a href="https://github.com/Aayush-Basnet/adidas"
@@ -175,44 +194,112 @@
 					</article>
 
 
-
 				</div>
-				<ul class="actions">
-					<li><a href="https://github.com/Aayush-Basnet/Project-Portfolio" class="button">Overview of other
-							projects</a></li>
-				</ul>
 			</section>
 
+		
+			<section>
+				<h2>📊 Data Analytics Portfolio</h2>
+					<div class="tab">
+						<div class="tablink active" onclick="openTab(event, 'PowerBI')">Power BI</div>
+						<div class="tablink" onclick="openTab(event, 'SQL')">SQL</div>
+						<div class="tablink" onclick="openTab(event, 'Python')">Python</div>
+						<div class="tablink" onclick="openTab(event, 'Tableau')">Tableau</div>
+						<div class="tablink" onclick="openTab(event, 'Excel')">Excel</div>
+						<div class="tablink" onclick="openTab(event, 'MachineLearning')">Machine Learning</div>
+					</div>
 
-			<li> <a class="col-6 col-12-xsmall work-item"
-				href="https://github.com/Aayush-Basnet/Data-Analysis-with-Python/blob/main/Customers%20Churn%20Prediction/Customer%20Churn%20Prediction.ipynb">Bank Customer Churn Prediction</a> </li>
-			<li> <a class="col-6 col-12-xsmall work-item"
-					href="https://github.com/Aayush-Basnet/Project-Portfolio/blob/main/Excel%20Data%20Project.xlsx">Bike
-					Sales Performance using Excel</a> </li>
-			<li> <a class="project"
-						href="https://public.tableau.com/app/profile/aayush.chhettri/viz/AmazonSalesinIndia_17063564344480/Dashboard1">Amazon Sales in India
-						(tableau)</a></li>
-			<li> <a class="project"
-					href="https://github.com/Aayush-Basnet/Power-BI/blob/main/HR%20Analytic%20Dashboard.pbix">HR Attrition
-					Dashboard (PowerBI)</a></li>
-			<li> <a class="project" href="https://github.com/Aayush-Basnet/Diwali-Sales-Analysis">Diwali Sales Analysis
-					(Python & PowerBI Project)</a></li>
-			<li> <a class="project"
-					href="https://github.com/Aayush-Basnet/Excel/blob/main/Excel%20Project/coffeeOrdersData.xlsx">Coffee
-					Sales Analysis: From Data Cleaning to Dashboard (Excel)</a></li>
-			<li> <a class="project"
-					href="https://public.tableau.com/app/profile/aayush.chhettri/viz/Netflix_17060135530490/Dashboard1">Netflix
-					(tableau)</a></li>
-			<li> <a class="project"
-						href="https://github.com/Aayush-Basnet/Data-Analysis-with-Python/blob/main/Task%203%20Model%20Development%20Car%20Pricing/Model%20Development_automobile.ipynb"> Model Development automobile pricing
-						</a></li>
-			<li> <a class="project"
-						href="https://github.com/Aayush-Basnet/Credit-Card-Fraud-Prediction"> Credit Card Fraud Prediction
-						</a></li>
+					<div id="PowerBI" class="content active">
+						<ul>
+							<li><a href="https://github.com/Aayush-Basnet/Power-BI">HR Attrition Dashboard</a></li>
+							<li><a href="https://github.com/Aayush-Basnet/Diwali-Sales-Analysis">Diwali Sales Analysis</a></li>
+							<li><a href="https://github.com/Aayush-Basnet/Credit-Card-Fraud-Prediction/tree/main/Credit%20Card%20Transaction%20Report">Credit Card Transaction Report</a></li>
+							<li><a href="https://github.com/Aayush-Basnet/31-Day-of-Data-Analytic-Project/tree/main/Day%207%20Pizza%20Sales%20Analysis">Pizza Sales Report</a></li>
+							<li><a href="https://github.com/Aayush-Basnet/Customer-Churn-Prediction">Customer Churn Predicton</a></li>
+							<li><a href="https://github.com/Aayush-Basnet/Mentorness-Internship/tree/main/Task%203">National Rural Employee Guarantee Act</a> </li>
+							<li><a href="https://github.com/Aayush-Basnet/31-Day-of-Data-Analytic-Project/tree/main/Day%2017%20Coffee%20Sales%20Analysis">Coffee Sales Report</a></li>
+							<li><a href="https://github.com/Aayush-Basnet/Finance-Domain/tree/main/Bank%20Loan%20Report">Bank Loan Report</a></li>
+						</ul>
+					</div>
+					
+					<!-- SQL Content -->
+					<div id="SQL" class="content">
+						<ul>
+							<li><a href="https://github.com/Aayush-Basnet/SQL/blob/main/SQL%20Project/Nashville%20Housing%20Data%20Cleaning.sql">Nashville Housing Data Cleaning</a></li>
+							<li><a href="https://github.com/Aayush-Basnet/SQL/blob/main/SQL%20Data%20Cleaning.sql">Companies Layoff Data Analysis</a></li>
+							<li><a href="https://github.com/Aayush-Basnet/SQL/blob/main/SQL%20Project/pizza_sales_sql.sql">Pizza Sales Analysis</a></li>
+							<li><a href="https://github.com/Aayush-Basnet/adidas">Adidas Sales Report</a></li>
+							<li><a href="https://github.com/Aayush-Basnet/31-Day-of-Data-Analytic-Project/tree/main/Day%205%20World%20Minning%20Commodities">World Mining Commodities</a></li>
+							<li><a href="https://github.com/Aayush-Basnet/SQL-Python-Ecommerce-project">E-Commerce Sales Analysis</a></li>
+							<li><a href ="https://github.com/Aayush-Basnet/BlinkIt-Grocery-Sales">BlinkIt Sales</a></li>
+						</ul>
+					</div>
+					
+					<!-- Python Content -->
+					<div id="Python" class="content">
+						<ul>
+							<li><a href="https://github.com/Aayush-Basnet/31-Day-of-Data-Analytic-Project/tree/main/Day%202%20IMDB%20Movie%20Analysis%20Python%20Project">IMDB Movie Analysis</a></li>
+							<li><a href="https://github.com/Aayush-Basnet/31-Day-of-Data-Analytic-Project/tree/main/Day%208%20Teco%20Customer%20Churn%20Anlaysis%20Python">Customer Churn Analysis</a></li>
+							<li><a href="https://github.com/Aayush-Basnet/Diwali-Sales-Analysis">Diwali Sales Analysis</a></li>
+							<li><a href="https://github.com/Aayush-Basnet/Finance-Domain/tree/main/Bitcoin_Cryptocurrency%20Analysis">Bitcoin Analysis</a></li>
+							<li><a href="https://github.com/Aayush-Basnet/Data-Analysis-Project/blob/main/Project%2005-%20London%20Housing%20Data%20Analysis.ipynb">London Housing Data Analysis</a></li>
+							<li><a href="https://github.com/Aayush-Basnet/Data-Analysis-Project/blob/main/Project%2006-%20Data%20Analysis%20of%20India%20Census%202011.ipynb">India Census 2011 Report</a></li>
+							<li><a href="https://github.com/Aayush-Basnet/Data-Analysis-Project/blob/main/Discovery%20of%20Importance%20of%20Handwash.ipynb">Discovery of Importance of Handwash</a></li>
+							<li><a href="https://github.com/Aayush-Basnet/Data-Analysis-with-Python/blob/main/Task%201%20Used%20Car%20Pricing/Used_Car_Pricing.ipynb">Automobile Price Data Wrangling</a></li>
+						</ul>
+					</div>
+					
+					<!-- Tableau Content -->
+					<div id="Tableau" class="content">
+						<ul>
+							<li><a href="https://public.tableau.com/app/profile/aayush.chhettri/viz/Netflix_17060135530490/Dashboard1">Netflix Data Visualization</a></li>
+							<li><a href="https://public.tableau.com/app/profile/aayush.chhettri/viz/EVDataAnalysis_17357209335390/EVDataAnalysis">EV Data Analysis</a></li>
+							<li><a href="https://public.tableau.com/app/profile/aayush.chhettri/viz/CountryHouseSales_17134950414390/HouseSalesDashboard">Country House Sales</a></li>
+							<li><a href="https://public.tableau.com/app/profile/aayush.chhettri/viz/AmazonSalesinIndia_17063564344480/Dashboard1">Amazon Sales India</a></li>
+							<li><a href="https://public.tableau.com/app/profile/aayush.chhettri/viz/CreditCardComplaints_17199940642160/Dashboard">Credit Card Complaints</a></li>
+						</ul>
+					</div>
+					
+					<!-- Excel Content -->
+					<div id="Excel" class="content">
+						<ul>
+							<li><a href="https://github.com/Aayush-Basnet/Excel/blob/main/Excel%20Project/coffeeOrdersData.xlsx">Coffee Sales Analysis</a></li>
+							<li><a href="https://github.com/Aayush-Basnet/31-Day-of-Data-Analytic-Project/tree/main/Day%206%20Store%20Sales%20Analysis%20using%20Excel">BlinkIt Grocery Sales</a></li>
+							<li><a href="https://github.com/Aayush-Basnet/Excel/blob/main/Excel%20Project/coffeeOrdersData.xlsx">Vrinda Store Sales Analysis</a></li>
+						</ul>
+						</ul>
+					</div>
+					
+					<!-- Machine Learning Content -->
+					<div id="MachineLearning" class="content">
+						<ul>
+							<li><a href="https://github.com/Aayush-Basnet/Credit-Card-Fraud-Prediction">Credit Card Fraud Prediction</a> </li>
+							<li><a href="https://github.com/Aayush-Basnet/Data-Analysis-with-Python/blob/main/Task%203%20Model%20Development%20Car%20Pricing/Model%20Development_automobile.ipynb">Automobile Price Prediction</a></li>
+							<li><a href="https://github.com/Aayush-Basnet/31-Day-of-Data-Analytic-Project/blob/main/Day%2015%20Hearth%20Failure%20Prediction/heart-failure-prediction.ipynb">Heart Failure Prediction</a></li>
+							<li><a href="https://github.com/Aayush-Basnet/Customer-Churn-Prediction">Customer Churn Prediction</a></li>
+						</ul>
+					</div>
+					<script>
+						function openTab(evt, tabName) {
+							var i, content, tablinks;
+							content = document.getElementsByClassName("content");
+							for (i = 0; i < content.length; i++) {
+								content[i].style.display = "none";
+							}
+							tablinks = document.getElementsByClassName("tablink");
+							for (i = 0; i < tablinks.length; i++) {
+								tablinks[i].classList.remove("active");
+							}
+							document.getElementById(tabName).style.display = "block";
+							evt.currentTarget.classList.add("active");
+						}
 
+						</script>
+			</section>
+						
 
-			<!-- My Activities -->
-			<section id="three">
+			 <!-- My Activities -->
+			 <section id="three">
 				<h2>My Activities</h2>
 				<div class="row">
 					<article class="col-6 col-12-xsmall work-item">
@@ -258,8 +345,9 @@
 						<a href="https://public.tableau.com/app/profile/aayush.chhettri/vizzes" class="image fit"><img
 								src="images/tableau.png" alt="" /></a>
 						<h3><a href="https://public.tableau.com/app/profile/aayush.chhettri/vizzes ">tableau</a></h3>
-						<p>Tableau empowers me to create clear and engaging data visualizations. I'm skilled in crafting
-							a variety of charts and graphs, including bar charts, line graphs, heatmaps, and maps, enabling stakeholders to explore data independently and make data-driven decisions.</p>
+						<p>Tableau empowers me to create clear and engaging data visualizations. I can
+							build interactive dashboards that allow users to explore data independently through
+							filtering, drilling down, and interacting with various elements.</p>
 						<ul class="actions special">
 							<li><a href="https://public.tableau.com/app/profile/aayush.chhettri/vizzes" class="button">
 									tableau</a> </li>
@@ -271,8 +359,7 @@
 								src="images/python.png" alt="" /></a>
 						<h3><a href="https://github.com/Aayush-Basnet/Data-Analysis-with-Python">Python (Programming
 								Language)</a></h3>
-						<p>Python is a powerful tool in my data analysis arsenal. I leverage libraries like Pandas for
-							data cleaning and manipulation, and NumPy for numerical computations. Using these libraries,
+						<p> I leverage libraries like Pandas for data cleaning and manipulation, and NumPy for numerical computations. Using these libraries,
 							I can efficiently handle missing values, outliers, and explore data through statistical
 							analysis. Furthermore, I can create custom data visualizations using libraries like
 							Matplotlib or Seaborn, allowing me to tailor visualizations to specific needs and uncover
@@ -298,12 +385,13 @@
 					<p>As a data enthusiast with a knack for decoding patterns, I bring expertise in analytics, turning
 						data into actionable insights. Let's unravel the stories hidden in numbers together.</p>
 					<ul class="feature-icons">
-						<li class="icon solid fa-robot"> Data Preprocessing, Model Development, and Machine Learning</li>
-						<li class="icon solid fa-chart-bar"> Data Visualization and Dashboard Creation</li>
-						<li class="icon solid fa-handshake"> Stakeholder Collaboration & Teamwork</li>
-						<li class="icon solid fa-users"> Excellent Communicator & People Management  </li>
-						<li class="icon solid fa-bullhorn"> Understanding of marketing concepts and strategies.</li>
-						<li class="icon solid fa-chart-pie"> Familiarity with statistical analysis techniques and A/B testing methodologies</li>
+						<li class="icon solid fa-cubes"> Data Cleaning and Preprocessing</li>
+						<li class="icon solid fa-chart-bar"> Data Visualization and Dashboard</li>
+						<li class="icon solid fa-chart-pie"> Statistical Analysis</li>
+						<li class="icon solid fa-robot"> Model Development and Evaluation</li>
+						<li class="icon solid fa-book"> Collaboration with Stakeholders</li>
+						<li class="icon solid fa-users"> People Management & Cooperation</li>
+						<li class="icon solid fa-robot"> Data Automation with AI</li>
 						
 					</ul>
 				</div>
@@ -363,7 +451,7 @@
 
 						<li><a href="https://www.linkedin.com/in/aayush-basnet-47b803239/"
 								class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
-						<li><a href="https://twitter.com/aayu_basnet" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						
 					</ul>
 
 				</div>
