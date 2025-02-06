@@ -33,6 +33,14 @@ body {
 	line-height: 1;
 }
 
+body { font-family: Arial, sans-serif; }
+.tab { display: flex; cursor: pointer; padding: 10px; background: #f4f4f4; border: 1px solid #ddd; }
+.tab div { padding: 10px; margin: 5px; background: #ddd; border-radius: 5px; }
+.tab div.active { background: #555; color: white; }
+.content { display: none; padding: 10px; border: 1px solid #ddd; margin-top: 5px; }
+.content.active { display: block; }
+
+
 ol, ul {
 	list-style: none;
 }
